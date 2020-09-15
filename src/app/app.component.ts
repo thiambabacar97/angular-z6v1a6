@@ -8,8 +8,8 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 export class AppComponent {
   name = 'Angular 4';
   myDropDown: string;
-  items = ['one', 'two', 'three',  'babacar'];
-  origItems = ['one', 'two', 'three'];
+  items = ['one', 'two', 'three',  ];
+  origItems = ['one', 'two', 'three','babacar'];
   @ViewChild('selectList', { static: false }) selectList: ElementRef;
 
   onChangeofOptions(newGov) {
