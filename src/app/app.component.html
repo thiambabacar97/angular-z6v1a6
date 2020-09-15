@@ -1,0 +1,14 @@
+<input type="text"         
+    (ngModelChange)="filterItem($event)" 
+    [(ngModel)]="filterText">
+    <br>
+<select 
+     #selectList
+     [(ngModel)]="myDropDown" 
+    (ngModelChange)="onChangeofOptions($event)">
+    <option value="empty"></option>
+    <option *ngFor="let item of items">         
+        {{item}}
+    </option>    
+</select>
+<p>items {{ items | json }}</p>
